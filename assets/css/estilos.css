@@ -123,7 +123,7 @@ header{
 .seccion-pautas{
    /*  background: #14bf98 rgba(20, 191, 152, 0.5);  */
     width: 100%;
-    height: 1000px;
+    height: auto;
     margin-top: 50px;
 }
 
@@ -138,13 +138,112 @@ header{
     text-align: center;
 }
 
+.titulo-pautas-contenedor{
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+}
+
 .titulo-pautas-contenedor h2{
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: -0.5px;
     /* text-transform: uppercase; */
+    color:rgb(0, 83, 159);
 }
 
+.pautas-grilla{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 13px;
+    margin: 1rem auto 4rem;
+}
+
+/* carta grilla */
+
+.carta-pauta{
+    border-radius: 1rem;
+    /* border: solid 1px rgba(0, 0, 0, 0.25); */
+    padding: 1rem .6rem 2rem; 
+    background-color: rgb(20, 191, 152);
+    color: #fff;
+}
+.encabezado-pauta{
+    margin: 0.5rem auto;
+    display: block;
+    text-align: center;
+}
+.encabezado-pauta h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.encabezado-pauta p{
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.cuerpo-pauta h4{
+    margin: 0.7rem auto 0.3rem;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(90deg, #555, #676767);
+    padding-bottom: 2rem;
+}
+
+footer p{
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0rem 0.5rem;
+    font-size: .9rem;
+ /*    text-transform: uppercase; */
+    font-weight: 500;
+}
+
+.redes{
+    max-width: 80%;
+    height: auto;
+    margin: 0rem auto;
+}
+
+.redes ul{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.redes ul li{
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.redes ul li a{
+    font-size: 2rem;
+    color: #fff;
+    transition: all 0.6s ease-in-out;
+}
+
+.redes ul li a:hover{
+    font-size: 2rem;
+    color: rgb(20, 191, 152);
+}
+
+@media (max-width: 991px){
+    .pautas-grilla{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 12px;
+    }
+
+}
 
 
 @media (max-width: 475px) {
@@ -169,5 +268,17 @@ header{
          height: 1000px;
          margin-top: 160px;
      }
+
+     .container-pautas{
+        width: 95%;
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+     .pautas-grilla{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px;
+    }
 
 }
